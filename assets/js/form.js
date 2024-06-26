@@ -28,9 +28,25 @@ function createPost(eventObj) {
     const titleText = titleInput.value;
 
     // content infor
-    const contentInput = document.querySelector('#username');
+    const contentInput = document.querySelector('#content');
 
     const contentText = contentInput.value;
+
+//    these are not working:
+     if (!usernameText) {
+        alert('Please provide your username');
+        return;
+    }
+
+    if (!titleText) {
+        alert('Please make a title for your post.');
+        return;
+    }
+
+    if (!contentText) {
+        alert('Add content to your post.');
+        return;
+    }
 
     // ?Q? can I add content this way? by putting a <div> around the all inputs and getting their data?
     // const userInput = document.querySelector('.allUserInput');
@@ -57,14 +73,35 @@ function createPost(eventObj) {
 
     localStorage.setItem('post', jsonArray);
 
-    // clear any text that was previously entered in the input field.
+    
+    // outputBlog();
+   
+    window.location = './blog.html';
 
-    usernameInput = '';
-    titleInput = '';
-    contentInput = '';
+} 
 
-    outputBlog();
-
-}
 
 blogForm.addEventListener('submit', createPost);
+
+
+
+/*blogForm.addEventListener('submit', function createPost(event) {
+    event.preventDefault();
+
+    perform validation
+    if (validateForm()) {
+        // store form data in local storage?
+
+        storeFormData();
+
+        // redirect to new page
+
+        window.location.href = 'blog.html';
+        // replace blog.htm w the url of new page
+
+    }
+});
+
+function validateForm() {
+
+}*/

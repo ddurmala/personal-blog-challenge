@@ -1,0 +1,52 @@
+* {
+    font-family: "Gochi Hand", sans-serif;
+}
+
+body {
+    background-image: url(./wavy-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #976bed;
+    border: none;
+    
+}
+
+h2 {
+    font-family: "Passion One";
+    font-size: 6vh;
+    height: 100px;
+    text-align: center;
+    margin-top: 10%;  
+}
+
+.blog-posts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 200px;
+        
+    /* this isnt work: 
+    align-content: space-between; */
+       
+
+
+}
+
+.post {
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    background: rgb(226, 235, 238);
+    }
+
+/* how do i style the elements inside the posts? */
