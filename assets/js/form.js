@@ -32,7 +32,6 @@ function createPost(eventObj) {
 
     const contentText = contentInput.value;
 
-//    these are not working:
      if (!usernameText) {
         alert('Please provide your username');
         return;
@@ -48,9 +47,6 @@ function createPost(eventObj) {
         return;
     }
 
-    // ?Q? can I add content this way? by putting a <div> around the all inputs and getting their data?
-    // const userInput = document.querySelector('.allUserInput');
-
     // object value with username, title and content
 
     const blogObj = {
@@ -59,11 +55,11 @@ function createPost(eventObj) {
         content: contentText
     }
 
-    // use getInput function to retreive all input???
+    // use getInput function to retreive all input
 
     const post = getPost();
 
-    // push the blogObj to the blog array??
+    // push the blogObj to the blog array
 
     post.push(blogObj);
 
@@ -72,6 +68,11 @@ function createPost(eventObj) {
     // save the post array to local storage
 
     localStorage.setItem('post', jsonArray);
+
+    // Clear Form fields
+    usernameInput.value = '';
+    titleInput.value = '';
+    contentInput.value = '';
 
     
     // outputBlog();

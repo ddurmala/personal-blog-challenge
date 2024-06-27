@@ -31,3 +31,10 @@ button {
     font-size: large;
     background-color: #976bed;
 }
+
+/* Media Queries */
+
+@media (max-width: 400px) {
+    form#blog-form {
+        width: 20px;
+}

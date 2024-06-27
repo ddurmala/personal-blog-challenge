@@ -3,6 +3,7 @@
 }
 
 body {
+    
     background-image: url(./wavy-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,14 +21,19 @@ button {
 }
 
 h2 {
-    font-family: "Passion One";
+    font-family: "Yeseva One", sans-serif;
     font-size: 6vh;
     height: 100px;
     text-align: center;
-    margin-top: 10%;  
+    margin-top: 20px;  
+}
+
+.container {
+    max-height: 100%;
 }
 
 .blog-posts {
+    
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -37,8 +43,6 @@ h2 {
         
     /* this isnt work: 
     align-content: space-between; */
-       
-
 
 }
 
@@ -49,4 +53,14 @@ h2 {
     background: rgb(226, 235, 238);
     }
 
+    footer {
+        /* this isnt working?? the footer is all messed up */
+        font-family: "Yeseva One", sans-serif;
+    }
+
 /* how do i style the elements inside the posts? */
+
+/* Media Queries */
+ 
+@media (max-width: 400px) {
+}
