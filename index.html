@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>landing page</title>
+    <title>Personal Blog</title>
 
 
     <!-- Fonts Import -->
@@ -21,27 +21,27 @@
 
 </head>
 
-<body>
+<body data-theme="light">
     <header>
-        <h1 class="blog-header text-center">Personal Blog</h1>
+        <h1 class="blog-header text-center">Dana's Personal Blog</h1>
+
+        <input type="checkbox" id="themeToggle">
+        <label for="themeToggle" id="themeToggleLabel"></label>
 
     </header>
 
     <form id="blog-form">
         <h2 class="text-center">Share your thoughts:</h2>
-        
-            <input id="username" type="text" placeholder="username">
 
-            <input id="title" type="text" placeholder="title">
+        <input id="username" type="text" placeholder="username">
 
-            <input id="content" type="text" placeholder="What's on your mind?">
-       
+        <input id="title" type="text" placeholder="title">
+
+        <input id="content" type="text" placeholder="What's on your mind?">
+
         <button>Post</button>
 
     </form>
-
-    <!-- links to JS -->
-    <script src="./assets/js/form.js"></script>
 
     <footer>
         <p>&copy 2024 developed by Dana Castagna</p>
@@ -49,6 +49,9 @@
         <a class="portfolio-link" href="https://ddurmala.github.io/dana_prof_portfolio/">visit my portfolio</a>
     </footer>
 
+    <!-- links to JS -->
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 
 </html>

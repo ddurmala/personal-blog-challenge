@@ -22,6 +22,7 @@ function createBlogPost(postObj) {
         <h3>${postObj.title}</h3>
         <hr>
         <p>${postObj.content}</p>
+        <hr>
         <p>${postObj.user}</p>
     </div>
     `

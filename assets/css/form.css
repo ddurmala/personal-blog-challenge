@@ -16,6 +16,11 @@ form>* {
     padding: 6px 12px;
 }
 
+form input {
+    background: var(--input-background)!important;
+    color: var(--input-text);
+}
+
 #content {
     height: 100px;
 }
@@ -34,7 +39,9 @@ button {
 
 /* Media Queries */
 
-@media (max-width: 400px) {
-    form#blog-form {
-        width: 20px;
-}
+/*@media (max-width: 400px) {
+    #blog-form {
+        width: 90%;
+}*/
+
+/* this isnt working */
