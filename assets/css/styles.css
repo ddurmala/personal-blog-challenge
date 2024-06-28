@@ -3,14 +3,14 @@
     --header-text: #0e2168;
     --background: url(./wavy-background.jpg);
     --input-text: black;
-    --input-background: #999;
+    --input-background: #888;
 
 }
 
 [data-theme="dark"] {
     --header-text: white;
     --input-text: black;
-    --input-background: #888;
+    --input-background: rgba(255, 255, 255, 0.864);
     --background: #222;
 }
 
@@ -36,25 +36,6 @@ body {
     min-height: 100vh;
     flex-grow: 1;
 }
-
-/*body {
-    position: relative;
-    background-color: white;
-    background-image: url(./wavy-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: .5;
-}*/
 
 img {
     max-width: 100%;
@@ -115,10 +96,10 @@ button {
     transform: translateX(25px);
 }
 
-/* .dark-mode {
+.dark-mode {
     background-color: #222;
     color: #fff;
-} */
+}
 
 /* form input {
     background: #999;
